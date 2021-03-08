@@ -86,7 +86,7 @@ task generateChangeLog(type: com.axelor.gradle.tasks.GenerateChangeLog) {
   }
   
   wrapper {
-    gradleVersion = '4.4'
+    gradleVersion = '5.6.4'
     distributionUrl = distributionUrl.replace("bin", "all")
 }
 }
