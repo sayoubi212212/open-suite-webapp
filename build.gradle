@@ -85,10 +85,11 @@ task generateChangeLog(type: com.axelor.gradle.tasks.GenerateChangeLog) {
     include '**/changelogs/**/*.yaml'
   }
   
-  wrapper {
+  task wrapper(type: Wrapper) {
     gradleVersion = '5.6.4'
     distributionUrl = distributionUrl.replace("bin", "all")
 }
+
 }
 
 build.finalizedBy archiveReports
